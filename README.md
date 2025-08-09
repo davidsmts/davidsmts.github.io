@@ -10,7 +10,7 @@ This website serves as my digital portfolio and hub for sharing professional upd
 
 You can view or download my CV directly from this repository:
 
-- [View My CV](./cv.pdf)
+- [View My CV](./CV-long.pdf)
 
 *(If your CV is named differently or in another format, update the link above accordingly.)*
 
