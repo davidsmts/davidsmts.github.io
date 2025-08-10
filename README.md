@@ -90,16 +90,6 @@ Visit my live site: [davidsmts.github.io](https://davidsmts.github.io/)
 
 ---
 
-## 🎨 Jekyll Theme
-
-This site uses the **Minimal** theme:
-```yaml
-theme: minimal
-```
-Configured in [_config.yml](./_config.yml).
-
----
-
 ## 📬 Contact
 
 For professional inquiries, collaborations, or academic references, please use the contact form or email provided above.
