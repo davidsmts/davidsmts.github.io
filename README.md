@@ -1,26 +1,45 @@
-# GitHub Pages Website
+# 🚀 David Schmotz – Portfolio
 
-Welcome to my personal website hosted on GitHub Pages! Here, you'll find information about me, my projects, and how to get in touch.
+Welcome to my personal website, powered by **Jekyll** and the elegant Minimal theme, hosted on GitHub Pages.
 
-## About
+---
 
-This website serves as my digital portfolio and hub for sharing professional updates, coding projects, and resources. Feel free to explore the site and learn more about my work and experiences.
+## 👨‍💻 About Me
 
-## Curriculum Vitae (CV)
+- **BSc in Computer Science & Mathematics**
+- **MPhil in Mathematical Statistics (University of Cambridge)**
 
-You can view or download my CV directly from this repository:
+This site is my digital portfolio: showcasing my background, projects, and ways to connect.
+
+---
+
+## 📄 Curriculum Vitae
+
+You can view or download my full CV here:
 
 - [View My CV](./CV-long.pdf)
 
-*(If your CV is named differently or in another format, update the link above accordingly.)*
+---
 
-## Site
+## 🌐 Website
 
-Visit the live website: [https://davidsmts.github.io/](https://davidsmts.github.io/)
+Visit my live site: [davidsmts.github.io](https://davidsmts.github.io/)
 
-## Contact
+---
 
-For professional inquiries or collaborations, please use the contact information provided on the website.
+## 🎨 Jekyll Theme
+
+This site uses the **Minimal** theme:
+```yaml
+theme: minimal
+```
+Configured in [_config.yml](./_config.yml).
+
+---
+
+## 📬 Contact
+
+Professional inquiries or collaborations? Please use the contact form or email provided on my website.
 
 ---
 
