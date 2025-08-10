@@ -1,9 +1,5 @@
 # 🚀 David Schmotz – Portfolio
 
-Welcome to my personal website, powered by **Jekyll** and the elegant Minimal theme, hosted on GitHub Pages.
-
----
-
 ## 👨‍💻 About Me
 
 - 📧 davidschmotz@gmail.com
