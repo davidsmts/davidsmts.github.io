@@ -1,16 +1,10 @@
 # 🚀 David Schmotz – Portfolio
 
-Welcome to my personal website, powered by **Jekyll** and the elegant Minimal theme, hosted on GitHub Pages.
-
----
-
 ## 👨‍💻 About Me
 
-- Elchweg 8, 31303 Burgdorf, Germany  
-- 📞 +49 171 2443410  
 - 📧 davidschmotz@gmail.com
 
-I am a researcher with a strong background in mathematics, computer science, and machine learning. My current interests lie in **AI Safety**, with a particular focus on the **Robustness of Large Language Models (LLMs)**. I am passionate about developing methods that make AI systems safer, more reliable, and interpretable.
+I am a researcher with a background in mathematics, computer science, and machine learning. My current interests lie in **AI Safety**, with a particular focus on the **Robustness of Large Language Models (LLMs)**. I am passionate about developing methods that make AI systems safer, more reliable, and interpretable.
 
 ---
 
