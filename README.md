@@ -17,21 +17,12 @@ I am a researcher with a strong background in mathematics, computer science, and
 ## 📚 Education
 
 **University of Cambridge** — Part III MASt Mathematics (2023–2024)
-- Grade: Honours
-- Courses: Modern Statistical Methods, Concentration Inequalities, Topics in Convex Optimisation, Information Theory, Statistical Learning in Practice, Advanced Probability
-- Thesis: *Differentially Private Synthetic Data*, supervised by Prof. Dr. Po-Ling Loh
 
 **University of Göttingen** — BSc Mathematics (2020–2023)
-- Grade: 1.5
-- Courses: Real Analysis, Analytic Geometry & Linear Algebra, Analysis on Manifolds, Numerical Analysis, Measure & Probability Theory, Stochastics, Statistical Foundations of Data Science, Optimization
-- Thesis: *Conjectures on Empirical Optimal Transport and their Numerical Assessment*
 
 **ETH Zürich** — Visiting Student in Mathematics (2022)
-- Courses: Graph Theory, Mathematics of Machine Learning, Topology
 
 **University of Göttingen** — BSc Applied Computer Science (2018–2023)
-- Grade: 1.5
-- Courses: Advanced Algorithms & Data Structures, Theoretical Computer Science, Scientific Computing, ODEs, Programming, Statistical Data Science, Deep Learning with PyTorch
 
 ---
 
@@ -65,7 +56,16 @@ Max-Planck-Institute for Multidisciplinary Sciences
 
 ## 🧠 Interest: AI Safety & LLM Robustness
 
-I am deeply interested in AI Safety, with a special focus on the robustness and reliability of Large Language Models (LLMs). My current research explores how LLMs can be made more robust to adversarial prompts, distributional shifts, and unexpected behaviors, ensuring they are trustworthy and safe for real-world deployment.
+My work is driven by the belief that as AI systems become more powerful and widespread, ensuring their safety and reliability becomes increasingly critical for society.
+
+Some topics I am looking into at the moment:
+
+**Privacy and Information Security**: I am interested in understanding how sensitive information flows through AI systems and developing methods to better protect user data while maintaining model utility.
+
+**AI System Interactions and Safety**: I explore how AI systems behave when they interact with each other and how potential vulnerabilities or biases might propagate through networks of interconnected models.
+
+**Robustness and Performance Trade-offs**: I am curious about novel approaches to balancing safety guarantees with model performance, particularly through innovative training methodologies, optimization techniques and noise design.
+
 
 ---
 
@@ -81,35 +81,3 @@ I am deeply interested in AI Safety, with a special focus on the robustness and 
 
 You can view or download my full CV here:  
 - [View My CV](./CV-long.pdf)
-
----
-
-## 🌐 Website
-
-Visit my live site: [davidsmts.github.io](https://davidsmts.github.io/)
-
----
-
-## 🎨 Jekyll Theme
-
-This site uses the **Minimal** theme:
-```yaml
-theme: minimal
-```
-Configured in [_config.yml](./_config.yml).
-
----
-
-## 📬 Contact
-
-For professional inquiries, collaborations, or academic references, please use the contact form or email provided above.
-
-### Academic References
-- Prof. Dr. Florin Manea — florin.manea@informatik.uni-goettingen.de
-- Dr. Johannes Söding — soeding@mpinat.mpg.de
-- Dr. Jan Philip Wahle — wahle@uni-goettingen.de
-- Prof. Dr. Po-Ling Loh — pll28@cam.ac.uk
-
----
-
-Thank you for visiting!
