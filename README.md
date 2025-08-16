@@ -1,11 +1,8 @@
 # David Schmotz – Portfolio
 
-## About Me
-
-- 📧 davidschmotz@gmail.com
----
-
-## Interest: AI Safety & LLM Robustness
+<div align="center">
+  <p>📧 <a href="mailto:davidschmotz@gmail.com">davidschmotz@gmail.com</a></p>
+</div>
 
 My work is driven by the belief that as AI systems become more powerful and widespread, ensuring their safety and reliability becomes increasingly critical for society.
 
