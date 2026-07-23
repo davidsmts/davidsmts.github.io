@@ -1,0 +1,87 @@
+# Publications, newest first.
+#
+# To add a paper, copy a block below. Every field except `title` and `authors`
+# is optional — omit what you don't have yet and the page adapts.
+#
+#   status:   small badge, e.g. "In preparation", "Under review", "NeurIPS 2026"
+#   note:     one-line highlight shown under the summary (optional)
+#   links:    list of { name, url }. Drop a PDF in /papers/ and link it as
+#             url: /papers/my-paper.pdf
+
+- title: "Decoding Encrypted Reasoning Traces in Proprietary LLM APIs"
+  authors: "Alexander Panfilov*, David Schmotz*, Ilia Shumailov, Luca Beurer-Kellner, Ameya Prabhu, Jonas Geiping, Maksym Andriushchenko"
+  year: 2026
+  venue: "Preprint"
+  status: "In preparation"
+  summary: >-
+    Providers hide chain-of-thought behind opaque encrypted blobs, but those blobs
+    are portable across sessions, users and models. We replay a captured trace into
+    a weaker compatible model and make it transcribe the hidden reasoning verbatim —
+    recovering a strong model's chain-of-thought without ever attacking it directly.
+  note: >-
+    A preliminary scan of publicly posted agent traces recovered 61 API keys,
+    36 passwords and 32 personal emails from encrypted reasoning fields.
+  tags:
+    - Reasoning traces
+    - Privacy
+    - Model extraction
+  links: []
+  # When the preprint is public, add e.g.:
+  # links:
+  #   - name: PDF
+  #     url: /papers/decoding-encrypted-reasoning-traces.pdf
+  #   - name: arXiv
+  #     url: https://arxiv.org/abs/XXXX.XXXXX
+
+- title: "ResearchArena: Evaluating Sabotage and Monitoring in Automated AI R&D"
+  authors: "Lena Libon, Ben Rank, Jehyeok Yeon, David Schmotz, Jeremy Qin, Daniel Donnelly, Derck Prinzhorn, Maksym Andriushchenko"
+  year: 2026
+  venue: "Preprint"
+  summary: >-
+    A control-style benchmark for automated AI research: an untrusted agent tries to
+    sabotage safety training, capability work, kernel and server optimisation while a
+    monitor tries to catch it. Sabotage hidden in training data is flagged less than
+    half the time.
+  tags:
+    - AI control
+    - Monitoring
+    - Sabotage
+  links:
+    - name: arXiv
+      url: https://arxiv.org/abs/2607.19321
+
+- title: "Skill-Inject: Measuring Agent Vulnerability to Skill File Attacks"
+  authors: "David Schmotz, Luca Beurer-Kellner, Sahar Abdelnabi, Maksym Andriushchenko"
+  year: 2026
+  venue: "Preprint"
+  summary: >-
+    A benchmark of 202 attack scenarios against agents that load third-party skills,
+    from blatant injections to subtle context-embedded ones. Frontier agents execute
+    harmful instructions — exfiltration, destructive actions, ransomware-like
+    behaviour — in up to 80% of cases, and scaling or input filtering does not fix it.
+  tags:
+    - Benchmark
+    - Prompt injection
+    - Agent security
+  links:
+    - name: arXiv
+      url: https://arxiv.org/abs/2602.20156
+
+- title: "Agent Skills Enable a New Class of Realistic and Trivially Simple Prompt Injections"
+  authors: "David Schmotz, Sahar Abdelnabi, Maksym Andriushchenko"
+  year: 2025
+  venue: "Preprint"
+  summary: >-
+    Agent Skills let anyone ship markdown instruction files into a coding agent's
+    context. We show malicious instructions buried in long skill files and their
+    referenced scripts extract credentials and internal documents — and that a benign
+    "Don't ask again" approval silently authorises closely related harmful actions.
+  note: >-
+    First demonstration of prompt injection through agent skill files.
+  tags:
+    - Prompt injection
+    - Agent skills
+    - Coding agents
+  links:
+    - name: arXiv
+      url: https://arxiv.org/abs/2510.26328

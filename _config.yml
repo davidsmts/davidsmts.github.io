@@ -1,1 +1,22 @@
-theme: jekyll-theme-minimal
+title: David Schmotz
+tagline: AI Security & Safety
+description: >-
+  David Schmotz researches the security of AI systems — prompt injection in
+  agentic settings, AI control and monitoring, automated red-teaming with
+  reinforcement learning, and information leakage through model APIs.
+author: David Schmotz
+email: davidschmotz@gmail.com
+url: https://davidsmts.github.io
+baseurl: ""
+
+github_username: davidsmts
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - .gitignore

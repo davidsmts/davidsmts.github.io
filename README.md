@@ -1,32 +1,50 @@
-# David Schmotz – Portfolio
+# davidsmts.github.io
 
-<div align="center">
-  <p>📧 <a href="mailto:davidschmotz@gmail.com">davidschmotz@gmail.com</a></p>
-</div>
+Personal research site — [davidsmts.github.io](https://davidsmts.github.io).
 
-My work is driven by the belief that as AI systems become more powerful and widespread, ensuring their safety and reliability becomes increasingly critical for society.
+Plain Jekyll on GitHub Pages, no gem theme, no build step. Push to `main` and
+Pages rebuilds it.
 
-Some topics I am looking into at the moment:
+```
+_config.yml              site title, description, email
+_data/publications.yml   the publication list — edit this, not the HTML
+_layouts/default.html    page shell: meta tags, nav, theme toggle, footer
+index.html               the single page
+assets/main.css          all styles (light + dark)
+papers/                  self-hosted PDFs
+```
 
-**Privacy and Information Security**: I am interested in understanding how sensitive information flows through AI systems and developing methods to better protect user data while maintaining model utility.
+## Adding a paper
 
-**AI System Interactions and Safety**: I explore how AI systems behave when they interact with each other and how potential vulnerabilities or biases might propagate through networks of interconnected models.
+Add an entry at the top of `_data/publications.yml`:
 
-**Robustness and Performance Trade-offs**: I am curious about novel approaches to balancing safety guarantees with model performance, particularly through innovative training methodologies, optimization techniques and noise design.
+```yaml
+- title: "Paper Title"
+  authors: "First Author, David Schmotz, Last Author"   # your name is bolded automatically
+  year: 2026
+  venue: "Preprint"
+  status: "Under review"        # optional badge
+  summary: >-
+    Two or three sentences on what the paper shows.
+  note: >-
+    Optional single-line highlight.
+  tags: [Topic, Topic]
+  links:
+    - name: arXiv
+      url: https://arxiv.org/abs/XXXX.XXXXX
+```
 
----
+The first entry in `links` also becomes the paper's title link. To host the PDF
+here, drop it in `papers/` and link it as `url: /papers/name.pdf`.
 
-## Education
+Every field except `title` and `authors` is optional — omit what you don't have
+and the layout adapts. Use `*` in the author string for equal contribution; the
+footnote under the list already explains it.
 
-**University of Cambridge** — Part III MASt Mathematics (2023–2024)
+## Local preview
 
-**ETH Zürich** — Visiting Student in Mathematics (2022)
+Requires Ruby and the `github-pages` gem:
 
-**University of Göttingen** — BSc Mathematics and Computer Science (2018–2023)
-
----
-
-## Curriculum Vitae
-
-You can view or download my full CV here:  
-- [View My CV](./CV-long.pdf)
+```sh
+bundle exec jekyll serve   # http://localhost:4000
+```

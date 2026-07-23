@@ -1,0 +1,156 @@
+---
+title: David Schmotz
+---
+
+<header class="hero">
+  <p class="eyebrow">AI Security &amp; Safety Research</p>
+  <h1 class="hero-name">David Schmotz</h1>
+  <p class="hero-affil">ELLIS Institute Tübingen · Max Planck Institute for Intelligent Systems · Tübingen AI Center</p>
+
+  <p class="lede">
+    I work on the security of AI systems that act in the world. Most of my research
+    is offensive: I look for the attack surfaces that appear once a model can read
+    untrusted files, call tools, and hide its own reasoning — and then measure how
+    badly frontier systems fail against them.
+  </p>
+  <p class="lede">
+    The goal is defensive. Attacks that are cheap to run and easy to reproduce are
+    the ones that get fixed, so I try to build benchmarks and demonstrations that
+    make a vulnerability impossible to wave away.
+  </p>
+
+  <ul class="linkrow">
+    <li><a href="mailto:{{ site.email }}">Email</a></li>
+    <li><a href="https://github.com/{{ site.github_username }}" rel="me">GitHub</a></li>
+    <li><a href="{{ '/CV-long.pdf' | relative_url }}">CV&nbsp;<span class="ext">PDF</span></a></li>
+    {%- comment -%}
+      Add profiles here once you have the URLs, e.g.
+      <li><a href="https://scholar.google.com/citations?user=..." rel="me">Google Scholar</a></li>
+      <li><a href="https://x.com/..." rel="me">X</a></li>
+    {%- endcomment -%}
+  </ul>
+</header>
+
+<section id="research" class="section">
+  <h2 class="section-title"><span>Research</span></h2>
+
+  <ol class="topics">
+    <li>
+      <h3>Agentic AI security</h3>
+      <p>
+        Prompt injection stopped being a toy problem the moment agents began loading
+        third-party skills, reading repositories, and executing shell commands. I study
+        the injection vectors that show up in real deployments, and how permission
+        systems get bypassed by attacks that look like ordinary work.
+      </p>
+    </li>
+    <li>
+      <h3>AI control &amp; monitoring</h3>
+      <p>
+        If a capable model cannot be trusted, the question becomes whether a weaker
+        monitor can still catch it. I build evaluations where an untrusted agent
+        attempts hidden sabotage in realistic R&amp;D tasks and measure what oversight
+        actually detects.
+      </p>
+    </li>
+    <li>
+      <h3>Automated attacks with RL</h3>
+      <p>
+        Hand-crafted jailbreaks do not scale and do not cover the space. I am interested
+        in learned attack policies — using reinforcement learning to search for exploits
+        automatically, so that red-teaming keeps pace with the systems it evaluates.
+      </p>
+    </li>
+    <li>
+      <h3>Distillation through model APIs</h3>
+      <p>
+        Providers hide chain-of-thought precisely because it is the raw material for
+        distillation. I study what an interface still gives away — reasoning traces,
+        signatures, cached state — and how cheaply that residue can be turned back into
+        the capability it was meant to protect.
+      </p>
+    </li>
+  </ol>
+</section>
+
+<section id="publications" class="section">
+  <h2 class="section-title"><span>Publications</span></h2>
+
+  <ol class="pubs">
+    {% for pub in site.data.publications %}
+    <li class="pub">
+      <div class="pub-meta">
+        <span class="pub-year">{{ pub.year }}</span>
+      </div>
+      <div class="pub-body">
+        <h3 class="pub-title">
+          {% assign primary = pub.links | first %}
+          {% if primary %}<a href="{{ primary.url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+          {% if pub.status %}<span class="badge">{{ pub.status }}</span>{% endif %}
+        </h3>
+
+        <p class="pub-authors">{{ pub.authors | replace: 'David Schmotz', '<strong>David Schmotz</strong>' }}</p>
+
+        {% if pub.summary %}<p class="pub-summary">{{ pub.summary }}</p>{% endif %}
+        {% if pub.note %}<p class="pub-note">{{ pub.note }}</p>{% endif %}
+
+        <div class="pub-foot">
+          {% if pub.tags %}
+          <ul class="tags">
+            {% for tag in pub.tags %}<li>{{ tag }}</li>{% endfor %}
+          </ul>
+          {% endif %}
+          {% if pub.links and pub.links.size > 0 %}
+          <ul class="pub-links">
+            {% for link in pub.links %}<li><a href="{{ link.url }}">{{ link.name }} <span aria-hidden="true">↗</span></a></li>{% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+
+  <p class="footnote">* denotes equal contribution.</p>
+</section>
+
+<section id="about" class="section">
+  <h2 class="section-title"><span>About</span></h2>
+
+  <p>
+    My work is driven by the belief that as AI systems become more powerful and more
+    widely deployed, their safety and reliability stop being a research curiosity and
+    become infrastructure. I am always glad to hear from people working on adjacent
+    problems.
+  </p>
+
+  <p>
+    I am deeply grateful to my PhD supervisor,
+    <a href="https://www.andriushchenko.me/">Maksym Andriushchenko</a>, whose guidance
+    and generosity have shaped every project on this page.
+  </p>
+
+  <h3 class="sub">Education</h3>
+  <ul class="cv-list">
+    <li>
+      <span class="cv-when">2023 – 2024</span>
+      <span class="cv-what"><strong>University of Cambridge</strong> — Part III, MASt in Mathematics</span>
+    </li>
+    <li>
+      <span class="cv-when">2022</span>
+      <span class="cv-what"><strong>ETH Zürich</strong> — Visiting student, Mathematics</span>
+    </li>
+    <li>
+      <span class="cv-when">2018 – 2023</span>
+      <span class="cv-what"><strong>University of Göttingen</strong> — BSc Mathematics &amp; BSc Computer Science</span>
+    </li>
+  </ul>
+
+  <h3 class="sub">Contact</h3>
+  <p>
+    The fastest way to reach me is by email at
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>. My full CV is available as a
+    <a href="{{ '/CV-long.pdf' | relative_url }}">long</a> or
+    <a href="{{ '/CV-short.pdf' | relative_url }}">short</a> PDF.
+  </p>
+</section>
