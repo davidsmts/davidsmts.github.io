@@ -78,7 +78,7 @@ title: David Schmotz
 
   <ol class="pubs">
     {% for pub in site.data.publications %}
-    <li class="pub">
+    <li class="pub{% if pub.blur %} is-blurred{% endif %}">
       <div class="pub-meta">
         <span class="pub-year">{{ pub.year }}</span>
       </div>
