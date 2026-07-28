@@ -1,7 +1,7 @@
 # Publications, newest first.
 #
 # To add a paper, copy a block below. Every field except `title` and `authors`
-# is optional — omit what you don't have yet and the page adapts.
+# is optional, omit what you don't have yet and the page adapts.
 #
 #   status:   small badge, e.g. "In preparation", "Under review", "NeurIPS 2026"
 #   note:     one-line highlight shown under the summary (optional)
@@ -17,7 +17,7 @@
   summary: >-
     Providers hide chain-of-thought behind opaque encrypted blobs, but those blobs
     are portable across sessions, users and models. We replay a captured trace into
-    a weaker compatible model and make it transcribe the hidden reasoning verbatim —
+    a weaker compatible model and make it transcribe the hidden reasoning verbatim,
     recovering a strong model's chain-of-thought without ever attacking it directly.
   note: >-
     A preliminary scan of publicly posted agent traces recovered 61 API keys,
@@ -58,8 +58,8 @@
   summary: >-
     A benchmark of 202 attack scenarios against agents that load third-party skills,
     from blatant injections to subtle context-embedded ones. Frontier agents execute
-    harmful instructions — exfiltration, destructive actions, ransomware-like
-    behaviour — in up to 80% of cases, and scaling or input filtering does not fix it.
+    harmful instructions (exfiltration, destructive actions, ransomware-like
+    behaviour) in up to 80% of cases, and scaling or input filtering does not fix it.
   tags:
     - Benchmark
     - Prompt injection
@@ -75,7 +75,7 @@
   summary: >-
     Agent Skills let anyone ship markdown instruction files into a coding agent's
     context. We show malicious instructions buried in long skill files and their
-    referenced scripts extract credentials and internal documents — and that a benign
+    referenced scripts extract credentials and internal documents, and that a benign
     "Don't ask again" approval silently authorises closely related harmful actions.
   note: >-
     First demonstration of prompt injection through agent skill files.

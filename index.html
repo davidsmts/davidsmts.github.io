@@ -8,15 +8,15 @@ title: David Schmotz
   <p class="hero-affil">Max Planck Institute for Intelligent Systems · ELLIS Institute Tübingen · Tübingen AI Center</p>
 
   <p class="lede">
-    I work on the security of AI systems that act in the world. Most of my research
+    I work on AI Security and Safety. Most of my research
     is offensive: I look for the attack surfaces that appear once a model can read
-    untrusted files, call tools, and hide its own reasoning — and then measure how
+    untrusted files, call tools, and hide its own reasoning, and I measure how
     badly frontier systems fail against them.
   </p>
   <p class="lede">
     The goal is defensive. Attacks that are cheap to run and easy to reproduce are
     the ones that get fixed, so I try to build benchmarks and demonstrations that
-    make a vulnerability impossible to wave away.
+    make a vulnerability hard to ignore.
   </p>
 
   <ul class="linkrow">
@@ -38,36 +38,29 @@ title: David Schmotz
     <li>
       <h3>Agentic AI security</h3>
       <p>
-        Prompt injection stopped being a toy problem the moment agents began loading
-        third-party skills, reading repositories, and executing shell commands. I study
-        the injection vectors that show up in real deployments, and how permission
-        systems get bypassed by attacks that look like ordinary work.
+        How agents that load third-party skills, read repositories, and execute shell
+        commands can be attacked through the untrusted content they process.
       </p>
     </li>
     <li>
       <h3>AI control &amp; monitoring</h3>
       <p>
-        If a capable model cannot be trusted, the question becomes whether a weaker
-        monitor can still catch it. I build evaluations where an untrusted agent
-        attempts hidden sabotage in realistic R&amp;D tasks and measure what oversight
-        actually detects.
+        Whether weaker but trusted monitors can catch a capable model attempting hidden
+        sabotage.
       </p>
     </li>
     <li>
       <h3>Automated attacks with RL</h3>
       <p>
-        Hand-crafted jailbreaks do not scale and do not cover the space. I am interested
-        in learned attack policies — using reinforcement learning to search for exploits
-        automatically, so that red-teaming keeps pace with the systems it evaluates.
+        Using reinforcement learning to search for exploits automatically, instead of
+        relying on hand-crafted jailbreaks or prompt injections.
       </p>
     </li>
     <li>
       <h3>Distillation through model APIs</h3>
       <p>
-        Providers hide chain-of-thought precisely because it is the raw material for
-        distillation. I study what an interface still gives away — reasoning traces,
-        signatures, cached state — and how cheaply that residue can be turned back into
-        the capability it was meant to protect.
+        How much of a model can be copied through its API, whether from the answers it
+        returns or from what the interface leaks around them.
       </p>
     </li>
   </ol>
@@ -118,35 +111,32 @@ title: David Schmotz
   <h2 class="section-title"><span>About</span></h2>
 
   <p>
-    My work is driven by the belief that as AI systems become more powerful and more
-    widely deployed, their safety and reliability stop being a research curiosity and
-    become infrastructure. I am always glad to hear from people working on adjacent
-    problems.
+    I am always glad to hear from people working on adjacent problems.
   </p>
 
   <p>
     I am deeply grateful to my PhD supervisor,
     <a href="https://www.andriushchenko.me/">Maksym Andriushchenko</a>, whose guidance
-    and generosity have shaped every project on this page.
+    has shaped every project on this page.
   </p>
 
   <h3 class="sub">Education</h3>
   <ul class="cv-list">
     <li>
       <span class="cv-when">2025 –</span>
-      <span class="cv-what"><strong>PhD</strong> — advised by Maksym Andriushchenko, at the Max Planck Institute for Intelligent Systems, the ELLIS Institute Tübingen and the Tübingen AI Center</span>
+      <span class="cv-what"><strong>PhD</strong>, advised by Maksym Andriushchenko, at the Max Planck Institute for Intelligent Systems, the ELLIS Institute Tübingen and the Tübingen AI Center</span>
     </li>
     <li>
       <span class="cv-when">2023 – 2024</span>
-      <span class="cv-what"><strong>University of Cambridge</strong> — Part III, MASt in Mathematics</span>
+      <span class="cv-what"><strong>University of Cambridge</strong>, Part III, MASt in Mathematics</span>
     </li>
     <li>
       <span class="cv-when">2022</span>
-      <span class="cv-what"><strong>ETH Zürich</strong> — Visiting student, Mathematics</span>
+      <span class="cv-what"><strong>ETH Zürich</strong>, Visiting student, Mathematics</span>
     </li>
     <li>
       <span class="cv-when">2018 – 2023</span>
-      <span class="cv-what"><strong>University of Göttingen</strong> — BSc Mathematics &amp; BSc Computer Science</span>
+      <span class="cv-what"><strong>University of Göttingen</strong>, BSc Mathematics &amp; BSc Computer Science</span>
     </li>
   </ul>
 
