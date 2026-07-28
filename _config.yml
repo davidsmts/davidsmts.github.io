@@ -20,3 +20,6 @@ defaults:
 exclude:
   - README.md
   - .gitignore
+  # CV PDFs kept in the repo but not published for now
+  - CV-long.pdf
+  - CV-short.pdf
