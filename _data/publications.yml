@@ -8,29 +8,31 @@
 #   links:    list of { name, url }. Drop a PDF in /papers/ and link it as
 #             url: /papers/my-paper.pdf
 
-- title: "Decoding Encrypted Reasoning Traces in Proprietary LLM APIs"
-  authors: "Alexander Panfilov*, David Schmotz*, Ilia Shumailov, Luca Beurer-Kellner, Ameya Prabhu, Jonas Geiping, Maksym Andriushchenko"
+- title: "Stealing Reasoning Traces from Proprietary LLM APIs"
+  authors: "Alexander Panfilov*, David Schmotz*, Ilia Shumailov*, Luca Beurer-Kellner, Joachim Schaeffer, Ameya Prabhu, Jonas Geiping, Maksym Andriushchenko"
   year: 2026
   venue: "Preprint"
-  status: "In preparation"
-  blur: true
   summary: >-
     Providers hide chain-of-thought behind opaque encrypted blobs, but those blobs
-    are portable across sessions, users and models. We replay a captured trace into
-    a weaker compatible model and make it transcribe the hidden reasoning verbatim,
-    recovering a strong model's chain-of-thought without ever attacking it directly.
+    are fully interchangeable across sessions, users and models within a provider's
+    ecosystem. We inject a captured trace into a weaker, less safeguarded model from
+    the same family and make it transcribe the hidden reasoning verbatim, recovering
+    a strong model's chain-of-thought without ever jailbreaking it directly. We
+    demonstrate the attack across Anthropic, OpenAI and Google.
   note: >-
-    A preliminary scan of publicly posted agent traces recovered 61 API keys,
-    36 passwords and 32 personal emails from encrypted reasoning fields.
+    Decoding 315,320 reasoning blocks scraped from public repositories recovered
+    367 pieces of personally identifiable information and 182 credentials. Disclosed
+    responsibly, with proposed cryptographic and system-level mitigations.
   tags:
     - Reasoning traces
     - Privacy
     - Model extraction
-  links: []
-  # When the preprint is public, add e.g.:
-  # links:
-  #   - name: PDF
-  #     url: /papers/decoding-encrypted-reasoning-traces.pdf
+  links:
+    - name: PDF
+      url: /papers/stealing-reasoning-traces.pdf
+    - name: Project page
+      url: https://stolen-thoughts.com
+  # When the preprint is on arXiv, add e.g.:
   #   - name: arXiv
   #     url: https://arxiv.org/abs/XXXX.XXXXX
 
