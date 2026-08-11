@@ -17,8 +17,11 @@
     are fully interchangeable across sessions, users and models within a provider's
     ecosystem. We inject a captured trace into a weaker, less safeguarded model from
     the same family and make it transcribe the hidden reasoning verbatim, recovering
-    a strong model's chain-of-thought without ever jailbreaking it directly. We
-    demonstrate the attack across Anthropic, OpenAI and Google.
+    a strong model's chain-of-thought without ever jailbreaking it directly. This
+    enables distillation of proprietary reasoning, large-scale private data
+    extraction, recovery of hazardous content the model refused to show, and
+    invisible prompt injections hidden inside the encrypted blocks. We demonstrate
+    the attack across Anthropic, OpenAI and Google.
   note: >-
     Decoding 315,320 reasoning blocks scraped from public repositories recovered
     367 pieces of personally identifiable information and 182 credentials. Disclosed
@@ -28,13 +31,12 @@
     - Privacy
     - Model extraction
   links:
+    - name: arXiv
+      url: https://arxiv.org/abs/2608.09867
     - name: PDF
       url: /papers/stealing-reasoning-traces.pdf
     - name: Project page
       url: https://stolen-thoughts.com
-  # When the preprint is on arXiv, add e.g.:
-  #   - name: arXiv
-  #     url: https://arxiv.org/abs/XXXX.XXXXX
 
 - title: "ResearchArena: Evaluating Sabotage and Monitoring in Automated AI R&D"
   authors: "Lena Libon, Ben Rank, Jehyeok Yeon, David Schmotz, Jeremy Qin, Daniel Donnelly, Derck Prinzhorn, Maksym Andriushchenko"
