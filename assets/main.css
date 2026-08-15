@@ -315,7 +315,7 @@ h3.sub {
   list-style: none;
   counter-reset: topic;
   display: grid;
-  gap: 2rem;
+  gap: 0.9rem;
 }
 .topics > li {
   counter-increment: topic;
@@ -333,7 +333,7 @@ h3.sub {
   color: var(--accent);
 }
 .topics h3 {
-  margin: 0 0 0.4rem;
+  margin: 0;
   font-family: var(--serif);
   font-size: 1.22rem;
   font-weight: 500;
@@ -346,8 +346,7 @@ h3.sub {
 }
 
 @media (min-width: 720px) {
-  .topics { grid-template-columns: 1fr 1fr; gap: 2.4rem 2.2rem; }
-  .topics p { max-width: none; }
+  .topics { grid-template-columns: 1fr 1fr; gap: 1rem 2.2rem; }
 }
 
 /* ---------- publications ---------- */
