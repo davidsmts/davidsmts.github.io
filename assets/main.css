@@ -514,36 +514,64 @@ h3.sub {
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 0.1rem;
+  gap: 0.4rem;
 }
+
 .talk {
+  position: relative;
   display: grid;
   gap: 0.1rem 1.6rem;
-  padding: 0.85rem 0;
-  border-bottom: 1px solid var(--line-soft);
+  padding: 1.1rem 1.2rem 1.1rem 1.3rem;
+  margin-left: -1.3rem;
+  margin-right: -1.2rem;
+  border-radius: 10px;
+  transition: background 0.18s ease;
 }
-.talk:last-child { border-bottom: none; }
+.talk::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.1rem;
+  bottom: 1.1rem;
+  width: 2px;
+  border-radius: 2px;
+  background: var(--accent);
+  opacity: 0;
+  transform: scaleY(0.4);
+  transform-origin: top;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.talk:hover { background: var(--bg-soft); }
+.talk:hover::before { opacity: 1; transform: scaleY(1); }
 
 .talk-when {
+  display: inline-block;
+  padding-top: 0.42em;
   font-family: var(--mono);
   font-size: 0.75rem;
   color: var(--faint);
   white-space: nowrap;
-  padding-top: 0.35em;
 }
+
 .talk-what { display: block; }
 
 .talk-venue {
-  font-size: 0.965rem;
+  display: inline;
+  font-family: var(--serif);
+  font-size: 1.12rem;
   font-weight: 500;
+  line-height: 1.32;
+  letter-spacing: -0.01em;
   color: var(--text);
 }
+
 .talk-title {
   display: block;
-  margin-top: 0.15rem;
+  margin-top: 0.3rem;
   font-family: var(--serif);
-  font-size: 1.02rem;
-  line-height: 1.4;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.45;
   color: var(--text-soft);
 }
 .talk-title a { color: var(--text-soft); }
@@ -551,13 +579,19 @@ h3.sub {
 
 .talk-with {
   display: block;
-  margin-top: 0.15rem;
-  font-size: 0.85rem;
+  margin-top: 0.35rem;
+  font-size: 0.82rem;
   color: var(--faint);
 }
 
 @media (min-width: 720px) {
-  .talk { grid-template-columns: 7.5rem 1fr; }
+  .talk {
+    grid-template-columns: 5.4rem 1fr;
+    padding-left: 1.3rem;
+  }
+}
+@media (max-width: 719px) {
+  .talk-when { padding-top: 0; margin-bottom: 0.35rem; }
 }
 
 /* ---------- cv list ---------- */
