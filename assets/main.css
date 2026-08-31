@@ -507,6 +507,59 @@ h3.sub {
   color: var(--faint);
 }
 
+/* ---------- talks ---------- */
+
+.talks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.1rem;
+}
+.talk {
+  display: grid;
+  gap: 0.1rem 1.6rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.talk:last-child { border-bottom: none; }
+
+.talk-when {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--faint);
+  white-space: nowrap;
+  padding-top: 0.35em;
+}
+.talk-what { display: block; }
+
+.talk-venue {
+  font-size: 0.965rem;
+  font-weight: 500;
+  color: var(--text);
+}
+.talk-title {
+  display: block;
+  margin-top: 0.15rem;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  line-height: 1.4;
+  color: var(--text-soft);
+}
+.talk-title a { color: var(--text-soft); }
+.talk-title a:hover { color: var(--accent); text-decoration: none; }
+
+.talk-with {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.85rem;
+  color: var(--faint);
+}
+
+@media (min-width: 720px) {
+  .talk { grid-template-columns: 7.5rem 1fr; }
+}
+
 /* ---------- cv list ---------- */
 
 .cv-list {
