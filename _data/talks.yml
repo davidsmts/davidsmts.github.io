@@ -2,15 +2,22 @@
 #
 #   date:      short label shown in the left column, e.g. "Sep 2026"
 #   venue:     hosting series or organisation
-#   title:     talk title
+#   title:     optional talk title (omit if not announced)
 #   status:    optional badge, e.g. "Upcoming"
 #   with:      optional co-speaker(s)
 #   url:       optional link (recording, slides, event page)
 
+- date: "Oct 2026"
+  venue: "SAIGE (Safe AI Germany)"
+  status: "Upcoming"
+
+- date: "Oct 2026"
+  venue: "CNIL, France"
+  status: "Upcoming"
+
 - date: "Sep 2026"
   venue: "Google Adversarial ML Series"
   title: "Stealing Reasoning Traces from Proprietary LLM APIs"
-  status: "Upcoming"
 
 - date: "Aug 2026"
   venue: "Cohere"

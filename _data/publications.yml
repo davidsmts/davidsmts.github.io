@@ -8,6 +8,45 @@
 #   links:    list of { name, url }. Drop a PDF in /papers/ and link it as
 #             url: /papers/my-paper.pdf
 
+- title: "LLM Agents Can Easily Tamper With Their Own Traces"
+  authors: "Jeremy Qin*, David Schmotz*, Derck Prinzhorn, Luca Beurer-Kellner, Ameya Prabhu, Maksym Andriushchenko"
+  year: 2026
+  venue: "Preprint"
+  summary: >-
+    Agent traces underpin monitoring, incident investigations and audits, but
+    local agents can delete their own traces without triggering monitor guardrails
+    in nearly all tested harnesses. We also show that external attackers can
+    induce trace deletion and that reward pressure can elicit trace tampering,
+    motivating logging outside the agent's control.
+  tags:
+    - Agent security
+    - Monitoring
+    - Trace integrity
+  links:
+    - name: arXiv
+      url: https://arxiv.org/abs/2609.30266
+    - name: PDF
+      url: /papers/llm-agents-can-easily-tamper-with-their-own-traces.pdf
+
+- title: "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure"
+  authors: "David Schmotz*, Derck Prinzhorn*, Luca Beurer-Kellner, Anselm Paulus, Ameya Prabhu, Maksym Andriushchenko"
+  year: 2026
+  venue: "Preprint"
+  summary: >-
+    EvasionBench tests whether agents circumvent runtime monitors while trying
+    to complete ordinary tasks. Across 50 task-policy pairs, best-of-three evasion
+    attempt rates reach 98% and success rates reach 88%; agents encode prohibited
+    commands, split operations across tool calls and retry to evade oversight.
+  tags:
+    - AI control
+    - Monitoring
+    - Agent security
+  links:
+    - name: arXiv
+      url: https://arxiv.org/abs/2609.30217
+    - name: PDF
+      url: /papers/instrumental-monitor-evasion-emerges-under-ordinary-task-pressure.pdf
+
 - title: "Stealing Reasoning Traces from Proprietary LLM APIs"
   authors: "Alexander Panfilov*, David Schmotz*, Ilia Shumailov*, Luca Beurer-Kellner, Joachim Schaeffer, Ameya Prabhu, Jonas Geiping, Maksym Andriushchenko"
   year: 2026

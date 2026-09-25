@@ -73,7 +73,7 @@ title: David Schmotz
       <span class="talk-what">
         <span class="talk-venue">{{ talk.venue }}</span>
         {% if talk.status %}<span class="badge">{{ talk.status }}</span>{% endif %}
-        <span class="talk-title">{% if talk.url %}<a href="{{ talk.url }}">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}</span>
+        {% if talk.title %}<span class="talk-title">{% if talk.url %}<a href="{{ talk.url }}">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}</span>{% endif %}
         {% if talk.with %}<span class="talk-with">with {{ talk.with }}</span>{% endif %}
       </span>
     </li>
