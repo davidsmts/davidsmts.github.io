@@ -21,7 +21,6 @@
   tags:
     - Agent security
     - Monitoring
-    - Trace integrity
   links:
     - name: arXiv
       url: https://arxiv.org/abs/2609.30266
@@ -66,9 +65,9 @@
     367 pieces of personally identifiable information and 182 credentials. Disclosed
     responsibly, with proposed cryptographic and system-level mitigations.
   tags:
-    - Reasoning traces
+    - Distillation
     - Privacy
-    - Model extraction
+    - Agent security
   links:
     - name: arXiv
       url: https://arxiv.org/abs/2608.09867
@@ -89,7 +88,6 @@
   tags:
     - AI control
     - Monitoring
-    - Sabotage
   links:
     - name: arXiv
       url: https://arxiv.org/abs/2607.19321
@@ -104,7 +102,6 @@
     harmful instructions (exfiltration, destructive actions, ransomware-like
     behaviour) in up to 80% of cases, and scaling or input filtering does not fix it.
   tags:
-    - Benchmark
     - Prompt injection
     - Agent security
   links:
@@ -124,8 +121,7 @@
     First demonstration of prompt injection through agent skill files.
   tags:
     - Prompt injection
-    - Agent skills
-    - Coding agents
+    - Agent security
   links:
     - name: arXiv
       url: https://arxiv.org/abs/2510.26328

@@ -8,9 +8,9 @@ Pages rebuilds it.
 ```
 _config.yml              site title, description, email
 _data/publications.yml   the publication list — edit this, not the HTML
-_layouts/default.html    page shell: meta tags, nav, theme toggle, footer
+_layouts/default.html    page shell: meta tags, nav, footer
 index.html               the single page
-assets/main.css          all styles (light + dark)
+assets/main.css          all styles (light mode)
 papers/                  self-hosted PDFs
 ```
 

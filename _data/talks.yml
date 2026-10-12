@@ -9,11 +9,13 @@
 
 - date: "Oct 2026"
   venue: "SAIGE (Safe AI Germany)"
-  status: "Upcoming"
+  title: "Stealing Reasoning Traces from Proprietary LLM APIs"
+  with: "Alexander Panfilov"
 
 - date: "Oct 2026"
   venue: "CNIL, France"
-  status: "Upcoming"
+  title: "Stealing Reasoning Traces from Proprietary LLM APIs"
+  with: "Alexander Panfilov"
 
 - date: "Sep 2026"
   venue: "Google Adversarial ML Series"

@@ -22,15 +22,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 
-  <script>
-    // Applied before first paint so the correct theme never flashes.
-    (function () {
-      try {
-        var saved = localStorage.getItem('theme');
-        if (saved) document.documentElement.setAttribute('data-theme', saved);
-      } catch (e) {}
-    })();
-  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -42,15 +33,6 @@
         <a href="#publications">Publications</a>
         <a href="#talks">Talks</a>
         <a href="#about">About</a>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme">
-          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" width="17" height="17">
-            <circle cx="12" cy="12" r="4.2"/>
-            <g stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></g>
-          </svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" width="17" height="17">
-            <path d="M20 14.4A8.4 8.4 0 0 1 9.6 4a8.4 8.4 0 1 0 10.4 10.4z"/>
-          </svg>
-        </button>
       </div>
     </div>
   </nav>
@@ -69,18 +51,6 @@
 
   <script>
     (function () {
-      var root = document.documentElement;
-      var toggle = document.getElementById('theme-toggle');
-      toggle.addEventListener('click', function () {
-        var current = root.getAttribute('data-theme');
-        if (!current) {
-          current = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        }
-        var next = current === 'dark' ? 'light' : 'dark';
-        root.setAttribute('data-theme', next);
-        try { localStorage.setItem('theme', next); } catch (e) {}
-      });
-
       var nav = document.getElementById('nav');
       var onScroll = function () {
         nav.classList.toggle('scrolled', window.scrollY > 8);

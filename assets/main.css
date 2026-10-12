@@ -1,9 +1,10 @@
 /* ==========================================================================
    David Schmotz — personal site
-   Light/dark, system-aware with a manual override on :root[data-theme].
+   Light theme.
    ========================================================================== */
 
 :root {
+  color-scheme: light;
   --bg:        #fdfcfa;
   --bg-soft:   #f5f3ef;
   --surface:   #ffffff;
@@ -23,36 +24,6 @@
   --measure: 34rem;
   --gutter: clamp(1.25rem, 5vw, 2.5rem);
   --nav-h: 60px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --bg:        #0e0f11;
-    --bg-soft:   #16181b;
-    --surface:   #131518;
-    --text:      #e9e8e5;
-    --text-soft: #c6c6c4;
-    --muted:     #9799a1;
-    --faint:     #6c6e77;
-    --line:      #26292e;
-    --line-soft: #1d2024;
-    --accent:    #ff9366;
-    --accent-bg: rgba(255, 147, 102, 0.12);
-  }
-}
-
-:root[data-theme='dark'] {
-  --bg:        #0e0f11;
-  --bg-soft:   #16181b;
-  --surface:   #131518;
-  --text:      #e9e8e5;
-  --text-soft: #c6c6c4;
-  --muted:     #9799a1;
-  --faint:     #6c6e77;
-  --line:      #26292e;
-  --line-soft: #1d2024;
-  --accent:    #ff9366;
-  --accent-bg: rgba(255, 147, 102, 0.12);
 }
 
 /* ---------- base ---------- */
@@ -163,42 +134,6 @@ strong { font-weight: 600; color: var(--text); }
 }
 .nav-links > a:hover { color: var(--text); text-decoration: none; }
 
-.theme-toggle {
-  display: grid;
-  place-items: center;
-  width: 32px;
-  height: 32px;
-  margin-left: 0.1rem;
-  padding: 0;
-  background: transparent;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  color: var(--muted);
-  cursor: pointer;
-  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
-}
-.theme-toggle:hover {
-  color: var(--accent);
-  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
-  background: var(--accent-bg);
-}
-.theme-toggle svg {
-  grid-area: 1 / 1;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.7;
-}
-.icon-moon { display: none; }
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) .icon-sun { display: none; }
-  :root:not([data-theme='light']) .icon-moon { display: block; }
-}
-:root[data-theme='dark'] .icon-sun { display: none; }
-:root[data-theme='dark'] .icon-moon { display: block; }
-:root[data-theme='light'] .icon-sun { display: block; }
-:root[data-theme='light'] .icon-moon { display: none; }
-
 @media (max-width: 480px) {
   .nav-links > a[href='#about'] { display: none; }
 }
@@ -207,16 +142,6 @@ strong { font-weight: 600; color: var(--text); }
 
 .hero {
   padding: clamp(3.5rem, 11vw, 6.5rem) 0 clamp(2.5rem, 6vw, 4rem);
-}
-
-.eyebrow {
-  margin: 0 0 1.4rem;
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent);
 }
 
 .hero-name {
@@ -228,19 +153,11 @@ strong { font-weight: 600; color: var(--text); }
   letter-spacing: -0.025em;
 }
 
-.hero-affil {
-  margin: 0 0 2rem;
-  max-width: 30rem;
-  font-size: 0.86rem;
-  line-height: 1.6;
-  color: var(--muted);
-}
-
 .lede {
   font-family: var(--serif);
   font-size: 1.19rem;
   line-height: 1.62;
-  color: var(--text-soft);
+  color: var(--accent);
 }
 
 .linkrow {
@@ -278,7 +195,6 @@ strong { font-weight: 600; color: var(--text); }
 /* ---------- sections ---------- */
 
 .section { padding: clamp(2.5rem, 7vw, 4.5rem) 0; }
-.section + .section { border-top: 1px solid var(--line-soft); }
 
 .section-title {
   display: flex;
@@ -305,48 +221,6 @@ h3.sub {
   font-size: 1.22rem;
   font-weight: 500;
   letter-spacing: -0.01em;
-}
-
-/* ---------- research topics ---------- */
-
-.topics {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  counter-reset: topic;
-  display: grid;
-  gap: 0.9rem;
-}
-.topics > li {
-  counter-increment: topic;
-  padding-left: 2.6rem;
-  position: relative;
-}
-.topics > li::before {
-  content: '0' counter(topic);
-  position: absolute;
-  left: 0;
-  top: 0.28em;
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  color: var(--accent);
-}
-.topics h3 {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: 1.22rem;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
-.topics p {
-  margin: 0;
-  color: var(--text-soft);
-  font-size: 0.965rem;
-}
-
-@media (min-width: 720px) {
-  .topics { grid-template-columns: 1fr 1fr; gap: 1rem 2.2rem; }
 }
 
 /* ---------- publications ---------- */
@@ -653,7 +527,7 @@ h3.sub {
 }
 
 @media print {
-  .nav, .theme-toggle, .skip-link { display: none; }
+  .nav, .skip-link { display: none; }
   body { background: #fff; color: #000; }
   .pub { break-inside: avoid; }
 }
