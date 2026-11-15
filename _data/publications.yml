@@ -8,6 +8,21 @@
 #   links:    list of { name, url }. Drop a PDF in /papers/ and link it as
 #             url: /papers/my-paper.pdf
 
+- title: "AI Agents Know Where to Find Each Other on the Web"
+  authors: "David Schmotz, Derck Prinzhorn, Ameya Prabhu, Maksym Andriushchenko"
+  year: 2026
+  status: "Paper coming soon"
+  summary: >-
+    We place two independent AI agents on the open web and ask them to find each
+    other and swap secret tokens, without telling them where to meet. Schelling
+    Atlas maps where they go, revealing the focal points agents converge on.
+  tags:
+    - Multi-agent
+    - Coordination
+  links:
+    - name: Project page
+      url: https://schelling-atlas.com
+
 - title: "LLM Agents Can Easily Tamper With Their Own Traces"
   authors: "Jeremy Qin*, David Schmotz*, Derck Prinzhorn, Luca Beurer-Kellner, Ameya Prabhu, Maksym Andriushchenko"
   year: 2026
