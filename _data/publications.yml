@@ -8,10 +8,25 @@
 #   links:    list of { name, url }. Drop a PDF in /papers/ and link it as
 #             url: /papers/my-paper.pdf
 
-- title: "AI Agents Know Where to Find Each Other on the Web"
+- title: "Autonomous agents can run successful open-model organisations. Evidence from an 8-week case study"
+  authors: "Arthur Wuhrmann, David Schmotz, Derck Prinzhorn, Ameya Prabhu, Harry Coppock, Maksym Andriushchenko"
+  year: 2026
+  summary: >-
+    We gave an Opus 5.5 agent a Hugging Face account and compute to run
+    Horizon Labs for seven weeks. It created 38 models that collectively
+    exceeded 50,000 downloads and were used in more than 100 GitHub repositories.
+  tags:
+    - Autonomous agents
+    - AI R&D
+  links:
+    - name: Project page
+      url: https://horizon-labs.ai/
+    - name: X thread
+      url: https://x.com/AWuhrmann/status/2122706838005440651
+
+- title: "Schelling Atlas: AI agents know where to find each other on the web"
   authors: "David Schmotz, Derck Prinzhorn, Ameya Prabhu, Maksym Andriushchenko"
   year: 2026
-  status: "Paper coming soon"
   summary: >-
     We place two independent AI agents on the open web and ask them to find each
     other and swap secret tokens, without telling them where to meet. Schelling
